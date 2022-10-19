@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Delivery</string>
     <string name="compraya">COMPRAYA</string>
+    <string name="btnGoogle">Continua con google</string>
+    <string name="btnFacebook">Continua con Facebook</string>
+    <string name="btnRegistrate">Registrate gratis</string>
+    <string name="btnInicia">Iniciar sesion</string>
+
+
 </resources>
