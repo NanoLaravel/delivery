@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde_central">#0eae7c</color>
+    <color name="verde_1">#cfefe5</color>
+    <color name="verde_2">#9fdfcb</color>
+    <color name="verde_3">#cfefe5</color>
+    <color name="verde_4">#3ebe96</color>ii
+    <color name="verde_5">#0b8b63</color>
+    <color name="verde_6">#08684a</color>
+    <color name="verde_7">#064632</color>
+    <color name="verde_8">#01110c</color>
+    <color name="rojo_central">#ff453a</color>
+    <color name="rojo_1">#ffdad8</color>
+    <color name="rojo_2">#ffb5b0</color>
+    <color name="rojo_3">#ff8f89</color>
+    <color name="rojo_4">#ff6a61</color>
+    <color name="rojo_5">#cc372e</color>
+    <color name="rojo_6">#992923</color>
+    <color name="rojo_7">#661c17</color>
+    <color name="rojo_8">#330e0c</color>
+    <color name="gris_central">#878d96</color>
+    <color name="gris_1">#fbfbfe</color>
+    <color name="gris_2">#dde1e6</color>
+    <color name="gris_3">#c1c7cd</color>
+    <color name="gris_4">#a2a9b0</color>
+    <color name="gris_5">#697077</color>
+    <color name="gris_6">#4d5358</color>
+    <color name="gris_7">#343a3f</color>
+    <color name="gris_8">#1b2138</color>
+
+
+
+</resources>
