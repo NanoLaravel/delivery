@@ -5,6 +5,16 @@
     <string name="btnFacebook">Continua con Facebook</string>
     <string name="btnRegistrate">Registrate gratis</string>
     <string name="btnInicia">Iniciar sesion</string>
+    <string name="tvinicio">INICIO</string>
+    <string name="tvregistro">REGISTRATE EN COMPRAYA</string>
+    <string name="tvnombre">Nombre</string>
+    <string name="tvremail">email</string>
+    <string name="tvcontrasena">contraseña</string>
+    <string name="tvinforegistro">rellena los 3 espacios para poder registrarte correctamente</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btniniciar">Iniciar</string>
+    <string name="tvcategoria">Categorias</string>
+
 
 
 </resources>
