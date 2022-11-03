@@ -18,7 +18,7 @@ public class Registro extends AppCompatActivity {
         iniciarHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Registro.this, HomeActivity.class);
+                Intent i = new Intent(Registro.this, HomeActivity2.class);
                 startActivity(i);
             }
         });

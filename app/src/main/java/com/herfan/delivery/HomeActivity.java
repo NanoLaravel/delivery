@@ -2,6 +2,7 @@ package com.herfan.delivery;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,11 +19,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class HomeActivity extends  AppCompatActivity {
-    String[] productos = {"Aceite", "Arroz", "Azucar", "Clorox", "Detergente", "Jabon de Baño", "Leche", "yogurt", "Mantequilla"};
-    float[] precios = {1900, 3200, 3900, 700, 1400, 2200, 1200, 1000};
-    int[] fotos = {R.drawable.aceite, R.drawable.arroz, R.drawable.azucar, R.drawable.clorox, R.drawable.jabonbano, R.drawable.leche, R.drawable.yogurt, R.drawable.mantequilla};
-    RecyclerView rv1;
 
+    RecyclerView rv1;
+    String[] productos = {"Aceite", "Arroz", "Azucar", "Clorox", "Detergente", "Jabon de Baño", "Leche", "yogurt", "Mantequilla"};
+    float[] precios = {1900, 3200, 3900, 700, 1400, 2200, 1200, 1000,2000};
+    int[] fotos = {R.drawable.aceite, R.drawable.arroz, R.drawable.azucar, R.drawable.clorox, R.drawable.jabonbano, R.drawable.leche, R.drawable.yogurt, R.drawable.mantequilla, R.drawable.mantequilla};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -34,7 +35,10 @@ public class HomeActivity extends  AppCompatActivity {
         rv1.setLayoutManager(linearLayoutManager);
         rv1.setAdapter(new AdaptadorProductos());
 
+        rv1.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+
     }
+
 
     private class AdaptadorProductos extends RecyclerView.Adapter<AdaptadorProductos.AdaptadorProductosHolder> {
 
