@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590632240796",
+    "project_id": "delivery-107cf",
+    "storage_bucket": "delivery-107cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590632240796:android:b18bc8e6841d87dcbc0f59",
+        "android_client_info": {
+          "package_name": "com.herfan.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590632240796-e19785lngr9pddt07ipsm81rkrabhb9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhPHMsQ3blmm1BtGrX3a8T2rnmr4gZoo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590632240796-e19785lngr9pddt07ipsm81rkrabhb9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
