@@ -20,7 +20,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Registro"
+            android:name=".RegistroActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -40,7 +40,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

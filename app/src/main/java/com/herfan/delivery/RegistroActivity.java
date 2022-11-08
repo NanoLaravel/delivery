@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Registro extends AppCompatActivity {
+public class RegistroActivity extends AppCompatActivity {
     private Button iniciarHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class Registro extends AppCompatActivity {
         iniciarHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Registro.this, HomeActivity2.class);
+                Intent i = new Intent(RegistroActivity.this, HomeActivity2.class);
                 startActivity(i);
             }
         });
