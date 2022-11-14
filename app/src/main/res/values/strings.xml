@@ -11,9 +11,10 @@
     <string name="tvremail">email</string>
     <string name="tvcontrasena">contraseña</string>
     <string name="tvinforegistro">rellena los 3 espacios para poder registrarte correctamente</string>
-    <string name="btnRegistrar">Registrar</string>
-    <string name="btniniciar">Iniciar</string>
+    <string name="btnRegistrar">Registrarse</string>
+
     <string name="tvcategoria">Categorias</string>
+    <string name="btnIrLogin">Ir a Login</string>
 
 
 </resources>

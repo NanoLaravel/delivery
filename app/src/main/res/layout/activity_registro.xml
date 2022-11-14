@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etNombreRegistro"
         android:layout_width="299dp"
         android:layout_height="64dp"
         android:layout_marginStart="40dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/etContrasenaRegistro"
         android:layout_width="307dp"
         android:layout_height="71dp"
         android:layout_marginTop="4dp"
@@ -53,10 +53,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRegistro" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etEmailRegistro"
         android:layout_width="299dp"
         android:layout_height="61dp"
         android:layout_marginStart="40dp"
@@ -68,10 +68,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombreRegistro" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRegistrarBD"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -86,19 +86,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/btn_iniciar_home"
+        android:id="@+id/btnIrLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/verde_central"
-        android:text="@string/btniniciar"
+        android:text="@string/btnIrLogin"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarBD" />
 
     <TextView
         android:id="@+id/textView5"
@@ -110,5 +110,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenaRegistro" />
 </androidx.constraintlayout.widget.ConstraintLayout>
