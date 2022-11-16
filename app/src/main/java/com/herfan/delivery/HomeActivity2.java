@@ -6,8 +6,13 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import org.checkerframework.common.subtyping.qual.Bottom;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +29,27 @@ public class HomeActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
+
+        Button btnNuevoProducto;
+        Button btnDatosUsuario;
+        btnNuevoProducto = findViewById(R.id.btnNuevoProducto);
+        btnDatosUsuario  = findViewById(R.id.btnDatosUsuario);
+
+        btnNuevoProducto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeActivity2.this, AgregarProducto.class);
+                startActivity(i);
+            }
+        });
+
+        btnDatosUsuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeActivity2.this, DatosUsuario.class);
+                startActivity(i);
+            }
+        });
 
         reciclerProductos = findViewById(R.id.recyclerView2);
         Producto p1 = new Producto("aceite", "2000");

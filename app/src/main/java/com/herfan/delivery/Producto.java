@@ -6,7 +6,6 @@ public class Producto {
     private String precio;
 
 
-
     public Producto() {
     }
 
@@ -43,5 +42,14 @@ public class Producto {
 
     public void setPrecio(String precio) {
         this.precio = precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "id_producto=" + id_producto +
+                ", nombre='" + nombre + '\'' +
+                ", precio=" + precio +
+                '}';
     }
 }
