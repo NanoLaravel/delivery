@@ -49,7 +49,7 @@ public class AgregarProducto extends AppCompatActivity {
         //controladorProductos = new ControladorProductos(getApplicationContext());
         etnombreProducto = findViewById(R.id.etnombreProducto);
         etprecioProducto = findViewById(R.id.etprecioProducto);
-        agregarImagen = findViewById(R.id.btn2);
+        agregarImagen = findViewById(R.id.btnAgregarImagen);
         imagenProducto = findViewById(R.id.imageView);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
@@ -142,7 +142,7 @@ public class AgregarProducto extends AppCompatActivity {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             progressDialog.dismiss();
-                            Toast.makeText(AgregarProducto.this, "Se cargo la imagen", Toast.LENGTH_LONG)
+                            Toast.makeText(AgregarProducto.this, "Se cargo la imagen correctamente", Toast.LENGTH_LONG)
                                     .show();
                         }
                     }

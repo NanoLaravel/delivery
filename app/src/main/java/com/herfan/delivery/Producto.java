@@ -1,9 +1,13 @@
 package com.herfan.delivery;
 
-public class Producto {
+
+import java.io.Serializable;
+
+public class Producto implements Serializable {
     private int id_producto;
     private String nombre;
     private String precio;
+    private int imagen;
 
 
     public Producto() {
@@ -13,11 +17,13 @@ public class Producto {
         this.id_producto = id_producto;
         this.nombre = nombre;
         this.precio = precio;
+
     }
 
-    public Producto(String nombre, String precio) {
+    public Producto(String nombre, String precio, int imagen) {
         this.nombre = nombre;
         this.precio = precio;
+        this.imagen = imagen;
     }
 
     public int getId_producto() {
@@ -44,12 +50,21 @@ public class Producto {
         this.precio = precio;
     }
 
+    public int getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(int imagen) {
+        this.imagen = imagen;
+    }
+
     @Override
     public String toString() {
         return "Producto{" +
                 "id_producto=" + id_producto +
                 ", nombre='" + nombre + '\'' +
                 ", precio=" + precio +
+                ", imagen=" + imagen +
                 '}';
     }
 }
