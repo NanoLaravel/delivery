@@ -15,17 +15,20 @@ import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>  {
     private List<Producto> listaProductos;
+    private final RecyclerViewInterface recyclerViewInterface;
 
-
-    public RecyclerAdapter(List<Producto> listaProductos){
+    public RecyclerAdapter(List<Producto> listaProductos, RecyclerViewInterface recyclerViewInterface){
         this.listaProductos = listaProductos;
+        this.recyclerViewInterface = recyclerViewInterface;
     }
+
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View filaProducto = LayoutInflater.from(parent.getContext()).inflate(R.layout.itemproducto2, parent, false);
-        return new MyViewHolder(filaProducto);
+        View filaProductos = LayoutInflater.from(parent.getContext()).inflate(R.layout.itemproducto2, parent, false);
+        return new MyViewHolder(filaProductos, recyclerViewInterface);
+
     }
 
     @Override
@@ -51,18 +54,33 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     }
 
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
        public TextView nombre, precio;
        public ImageView imagen;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
             super(itemView);
             nombre = itemView.findViewById(R.id.tvProducto);
             precio = itemView.findViewById(R.id.tvprecio);
             imagen = itemView.findViewById(R.id.imgItem);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (recyclerViewInterface != null){
+                        int pos = getAdapterPosition();
+
+                        if (pos != RecyclerView.NO_POSITION){
+                            recyclerViewInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
+
+
         }
     }
+
 }
 
 

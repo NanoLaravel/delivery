@@ -17,7 +17,7 @@ import org.checkerframework.common.subtyping.qual.Bottom;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity2 extends AppCompatActivity {
+public class HomeActivity2 extends AppCompatActivity implements RecyclerViewInterface{
     private  RecyclerView reciclerProductos;
     private ArrayList<Producto> listaProductos;
     private RecyclerAdapter adaptador;
@@ -81,13 +81,25 @@ public class HomeActivity2 extends AppCompatActivity {
         listaProductos.add(p7);
         listaProductos.add(p8);
         listaProductos.add(p9);
-        adaptador = new RecyclerAdapter(listaProductos);
+        adaptador = new RecyclerAdapter(listaProductos, this);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         reciclerProductos.setLayoutManager(mLayoutManager);
         reciclerProductos.setItemAnimator(new DefaultItemAnimator());
         reciclerProductos.setAdapter(adaptador);
 
 
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(HomeActivity2.this, DetalleProducto.class);
+
+        //intent.putExtra("id", listaProductos.get(position).getId_producto());
+        intent.putExtra("nombre", listaProductos.get(position).getNombre());
+        intent.putExtra("precio", listaProductos.get(position).getPrecio());
+        intent.putExtra("imagen", listaProductos.get(position).getImagen());
+
+        startActivity(intent);
     }
 }
 
