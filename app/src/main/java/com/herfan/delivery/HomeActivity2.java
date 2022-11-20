@@ -30,11 +30,11 @@ public class HomeActivity2 extends AppCompatActivity implements RecyclerViewInte
 
         Button btnNuevoProducto;
         Button btnDatosUsuario;
-        Button btnUbicacion;
+
 
         btnNuevoProducto = findViewById(R.id.btnNuevoProducto);
         btnDatosUsuario  = findViewById(R.id.btnDatosUsuario);
-        btnUbicacion = findViewById(R.id.btnUbicacion);
+
 
         btnNuevoProducto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,13 +52,7 @@ public class HomeActivity2 extends AppCompatActivity implements RecyclerViewInte
             }
         });
 
-        btnUbicacion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(HomeActivity2.this, MapsActivity.class);
-                startActivity(i);
-            }
-        });
+
 
         reciclerProductos = findViewById(R.id.recyclerView2);
         Producto p1 = new Producto("aceite", "2000", R.drawable.aceite);
