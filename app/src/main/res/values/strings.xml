@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Delivery</string>
-    <string name="compraya">COMPRAYA</string>
+    <string name="compraya">DELIVERY</string>
     <string name="btnGoogle">Continua con google</string>
     <string name="btnFacebook">Continua con Facebook</string>
     <string name="btnRegistrate">Registrate gratis</string>
     <string name="btnInicia">Iniciar sesion</string>
     <string name="tvinicio">INICIO</string>
-    <string name="tvregistro">REGISTRATE EN COMPRAYA</string>
+    <string name="tvregistro">REGISTRATE EN DELIVERY</string>
     <string name="tvnombre">Nombre</string>
     <string name="tvremail">email</string>
     <string name="tvcontrasena">contraseña</string>

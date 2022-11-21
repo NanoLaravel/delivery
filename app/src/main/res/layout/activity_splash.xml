@@ -21,7 +21,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="236dp"
-        android:layout_height="43dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/compraya"
         android:textAlignment="center"
